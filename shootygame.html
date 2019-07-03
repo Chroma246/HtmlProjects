@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Shoot Game </title>
+	<script>
+		alert("You have 1.5 seconds to shoot after you press OK.")
+		function btn() {
+			alert("Pow! You fire and defeat the enemy. Sorry that it repeats, im just too lazy to fix it.")
+		}
+		function die() {
+			alert("Oof. You were Shot.")
+			throw new Error('This is not an error, just a loophole to end the script.')
+		}
+		setInterval(die, 1500)
+	</script>
+	<style>
+		body {
+			background-color: #1B5367;
+		}
+		body div {
+			text-align: center;
+		}
+		body div button {
+			background-color: #00FFEC;
+			color: blue;
+			height: 50px;
+			width: 100px;
+			font-size: 25px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<button onclick="btn()">
+			Shoot
+		</button>
+		<img src=https://images.freeimages.com/images/large-previews/1f9/ipsc-goes-matrix-1-1440055.jpg height: 250px width: 250px/>
+	</div>
+</body>
+</html>
